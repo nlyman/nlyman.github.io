@@ -1,0 +1,10 @@
+.portfolio-body {
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+}
+
+.navbar {
+    display: grid;
+    height: 100%;
+    position: sticky;
+}
