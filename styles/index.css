@@ -19,6 +19,13 @@ html, body {
     background-color: aqua;
 }
 
+.sub-navbar {
+    display: grid;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
 .aboutMe {
     display: none;
 }
