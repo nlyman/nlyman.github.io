@@ -5,65 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nathan's Portfolio</title>
     <link rel="stylesheet" href="styles/index.css">
-    <script src="scripts/index.js"></script>
 </head>
 <body class="portfolio-body">
+    <input type="radio" class="navRadio" name="section" id="aboutMeRadioButton">
+    <input type="radio" class="navRadio" name="section" id="projectsRadioButton">
     <div class="navbar">
         <h1>Nathan's Portfolio</h1>
         <nav id="dropdown">
-            
+            <div>
+                
+                <label for="aboutMeRadioButton">About Me</label>
+            </div>
+            <div>
+                
+                <label for="projectsRadioButton">Project</label>
+            </div>
         </nav>
     </div>
-    <div id="frame-container">
+    <div class="sub-navbar">
+        <section class="aboutMe">
+            
+        </section>
 
     </div>
-    <h2>
-        About Me
-    </h2>
-    <section>
-        <img src="./images.profile.picture.jpg" alt="me">
-    </section>
-    <section>
-        <h3>
-            Biographical Info
-        </h3>
-        <p>
-            I have been interested in programming since young<br>
-            After getting a chance to learn it I became passionate about refining my methodology.
-        </p>
-    </section>
-    <section>
-        <h3>
-            Contact Info
-        </h3>
-        <p>
-            Unknown for now.
-        </p>
-    </section>
-    <section>
-        <h3>
-            Skills
-        </h3>
-        <ul>
-            <li>Java</li>
-            <li>TypeScript</li>
-            <li>HTML</li>
-            <li>Rust</li>
-        </ul>
-    </section>
-    <section>
-        <h3>
-            Other Details
-        </h3>
-        <p>
-            I code thoroughly.
-            My specialties in design code is based around how others can access it.
-            <ul>
-                <li>reusability</li>
-                <li>ease of use</li>
-                <li>modulated</li>
-            </ul>
-        </p>
-    </section>
+    <div class="contents">
+        <section class="aboutMe">
+            <h2>About Me</h2>
+            <section>
+                <img src="./images.profile.picture.jpg" alt="me">
+            </section>
+            <section>
+                <h3>
+                    Biographical Info
+                </h3>
+                <p>
+                    I have been interested in programming since young<br>
+                    After getting a chance to learn it I became passionate about refining my methodology.
+                </p>
+            </section>
+            <section>
+                <h3>
+                    Contact Info
+                </h3>
+                <p>
+                    Unknown for now.
+                </p>
+            </section>
+            <section>
+                <h3>
+                    Skills
+                </h3>
+                <ul>
+                    <li>Java</li>
+                    <li>TypeScript</li>
+                    <li>HTML</li>
+                    <li>Rust</li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    Other Details
+                </h3>
+                <p>
+                    I code thoroughly.
+                    My specialties in design code is based around how others can access it.
+                    <ul>
+                        <li>reusability</li>
+                        <li>ease of use</li>
+                        <li>modulated</li>
+                    </ul>
+                </p>
+            </section>
+        </section>
+        <section class="projects">
+            a
+        </section>
+    </div>
 </body>
 </html>
