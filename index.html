@@ -6,84 +6,113 @@
     <title>Nathan's Portfolio</title>
     <link rel="stylesheet" href="styles/index.css">
 </head>
-<body class="portfolio-body">
-    <input type="radio" class="navRadio" name="section" id="aboutMeRadioButton">
+<body>
+    <input type="radio" class="navRadio" name="section" id="aboutMeRadioButton" checked>
     <input type="radio" class="navRadio" name="section" id="projectsRadioButton">
-    <div class="navbar">
-        <h1>Nathan's Portfolio</h1>
-        <nav id="dropdown">
-            <div>
-                <label for="aboutMeRadioButton">About Me</label>
+    <input type="radio" class="navRadio" name="section" id="settingsRadioButton">
+    <input type="radio" class="navRadio" name="color-mode" id="lightModeRadioButton" checked>
+    <input type="radio" class="navRadio" name="color-mode" id="darkModeRadioButton">
+    
+    <div class="portfolio-body">
+        <span></span>
+        <div class="navbar">
+            <div class="main-navbar">
+                <h1>Nathan's Portfolio</h1>
+                <nav id="dropdown">
+                    <div>
+                        <label for="aboutMeRadioButton">About Me</label>
+                    </div>
+                    <div>
+                        <label for="projectsRadioButton">Project</label>
+                    </div>
+                    <div>
+                        <label for="settingsRadioButton">Settings</label>
+                    </div>
+                </nav>
             </div>
-            <div>
-                <label for="projectsRadioButton">Project</label>
-            </div>
-        </nav>
-    </div>
-    <div class="sub-navbar">
-        <section class="aboutMe">
-            <ul>
-                <li><a href="#">Top</a></li>
-                <li><a href="#biographical-info">Biographical</a></li>
-                <li><a href="#contact-info">Contact</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#other-details">Other</a></li>
-            </ul>
-        </section>
-
-    </div>
-    <div class="contents">
-        <section class="aboutMe">
-            <h2>About Me</h2>
-            <section id="profile-picture">
-                <img src="images/profile-picture.jpg" alt="me">
-            </section>
-            <section id="biographical-info">
-                <h3>
-                    Biographical Info
-                </h3>
-                <p>
-                    I have been interested in programming since young<br>
-                    After getting a chance to learn it I became passionate about refining my methodology.
-                </p>
-            </section>
-            <section id="contact-info">
-                <h3>
-                    Contact Info
-                </h3>
-                <p>
-                    Unknown for now.
-                </p>
-            </section>
-            <section id="skills">
-                <h3>
-                    Skills
-                </h3>
-                <ul>
-                    <li>Java</li>
-                    <li>TypeScript</li>
-                    <li>HTML</li>
-                    <li>Rust</li>
-                </ul>
-            </section>
-            <section id="other-details">
-                <h3>
-                    Other Details
-                </h3>
-                <p>
-                    I code thoroughly.
-                    My specialties in design code is based around how others can access it.
+            <div class="sub-navbar">
+                <section class="aboutMe">
+                    <h2>About Me</h2>
                     <ul>
-                        <li>reusability</li>
-                        <li>ease of use</li>
-                        <li>modulated</li>
+                        <li><a href="#">Head</a></li>
+                        <li><a href="#biographical-info">Biographical</a></li>
+                        <li><a href="#contact-info">Contact</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#other-details">Other</a></li>
                     </ul>
-                </p>
+                </section>
+                <section class="projects">
+                    <h2>Projects</h2>
+                </section>
+                <section class="settings">
+                    <h2>Settings</h2>
+                </section>
+            </div>
+        </div>
+        <div class="contents">
+            <section class="aboutMe">
+                <section id="profile-picture">
+                    <img src="images/profile-picture.png" alt="me">
+                </section>
+                <section id="biographical-info">
+                    <h3>
+                        Biographical Info
+                    </h3>
+                    <p>
+                        I have been interested in programming since young<br>
+                        After getting a chance to learn it I became passionate about refining my methodology.
+                    </p>
+                </section>
+                <section id="contact-info">
+                    <h3>
+                        Contact Info
+                    </h3>
+                    <p>
+                        Unknown for now.
+                    </p>
+                </section>
+                <section id="skills">
+                    <h3>
+                        Skills
+                    </h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>TypeScript</li>
+                        <li>HTML</li>
+                        <li>Rust</li>
+                    </ul>
+                </section>
+                <section id="other-details">
+                    <h3>
+                        Other Details
+                    </h3>
+                    <p>
+                        I code thoroughly.
+                        My specialties in design code is based around how others can access it.
+                        <ul>
+                            <li>reusability</li>
+                            <li>ease of use</li>
+                            <li>modulated</li>
+                        </ul>
+                    </p>
+                </section>
             </section>
-        </section>
-        <section class="projects">
-            a
-        </section>
+            <section class="projects">
+                <h2>Projects</h2>
+            </section>
+            <section class="settings">
+                <h2>Settings</h2>
+                <div id="color-mode">
+                    <h3>Color Mode</h3>
+                    <div>
+                        <label for="lightModeRadioButton">Light Mode</label>
+                    </div>
+                    <div>
+                        <label for="darkModeRadioButton">Dark Mode</label>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 </body>
 </html>
