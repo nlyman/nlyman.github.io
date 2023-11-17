@@ -2,6 +2,10 @@ html, body {
     min-height: 110%;
 }
 
+#darkModeRadioButton:checked ~ * .portfolio-body {
+    background-color: darkslategrey;
+}
+
 .navRadio{
     display: none;
 }
@@ -29,27 +33,23 @@ html, body {
     background-color: darkblue;
 }
 
-.navbar div {
+.navbar li {
     padding: 5px;
-}
-
-.main-navbar label {
     display: inline-block;
     width: 60%;
     padding: 16px;
     border: 2px solid;
-    cursor: pointer;
 }
 
 label {
     cursor: pointer;
 }
 
-#lightModeRadioButton:checked ~ * .main-navbar label {
-    border-color: aquamarine;
+#lightModeRadioButton:checked ~ * .navbar li {
+    border-color: blue;
     background-color: whitesmoke;
 }
-#darkModeRadioButton:checked ~ * .main-navbar {
+#darkModeRadioButton:checked ~ * .navbar li{
     border-color: aquamarine;
     background-color: gray;
 }
